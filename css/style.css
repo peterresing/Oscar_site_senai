@@ -87,7 +87,7 @@ body {
 .footer {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: baseline;
     flex-wrap: wrap;
     gap: 12px;
     width: auto;
@@ -95,12 +95,12 @@ body {
     padding: 24px;
     font-size: 14px;
     background-color: rgb(48, 78, 154);
+
 }
   
 .criadores {
     display: flex;
-    gap: 2px;
-    justify-content: center;
+    align-items: center;
     font-size: 18px;
 
 }
