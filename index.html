@@ -1,79 +1,53 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Universal Shop</title>
-    <link rel="stylesheet" href="css/style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Universal Shop — produtos incríveis para quem ama o espaço.">
+  <title>Universal Shop | Loja Espacial</title>
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <header class="header">
-    <img class="imglogo" src="css/Logo_Espacial_Universal_Shop-removebg-preview.png">
-    <img class="carrinho" src="css/shopping-cart.svg">
-    </header>
-
-    <main>
-        <section class="hero" id="hero">
-            
-        <div class="card">
-            <img class="imgitens" src="https://acrilicostore.fbitsstatic.net/img/p/luminaria-bola-de-cristal-3d-planeta-saturno-71466/258409-3.jpg?w=1000&h=1000&v=202507310820&qs=ignore">
-            <span class="itens">Luminaria de Saturno</span>
-            <span class="itens">R$50</span>
-        </div>
-
-        <div class="card">
-            <img class="imgitens" src="https://acdn-us.mitiendanube.com/stores/005/618/407/products/f36050_20220926143052330194-e3edbd0b101d4be0b717529084015223-1024-1024.webp">
-            <span class="itens">Kit Luneta 4 Peças</span>
-            <span class="itens">R$150</span>
-        </div>
-
-        <div class="card">
-            <img class="imgitens" src="https://m.media-amazon.com/images/I/51Nva6MtzkL._AC_UF894,1000_QL80_.jpg">
-            <span class="itens">Estrelas Fluorescentens</span>
-            <span class="itens">R$10</span>
-        </div>
-
-        <div class="card">
-            <img class="imgitens" src="https://http2.mlstatic.com/D_NQ_NP_781376-MLB32328732573_092019-O-sorvete-de-astronauta--neapolitan-ice-cream-sandwich--impo.webp">
-            <span class="itens">Sorvete de Astronauta</span>
-            <span class="itens">R$25</span>
-        </div>
-
-        <div class="card">
-            <img class="imgitens" src="https://images.tcdn.com.br/img/img_prod/460977/fantasia_capacete_de_astronauta_com_viseira_movel_estados_unidos_nasa_138913_1_8b7bd80aff4f78386dedf4d38b1179e6.jpg"> 
-            <span class="itens">Capacete de Astronauta</span>
-            <span class="itens">R$70</span>
-        </div>
-
+  <header class="topbar">
+    <a class="brand" href="#inicio" aria-label="Universal Shop - início"><img src="css/logo-universal-shop.png" alt="Universal Shop"></a>
+    <nav class="nav-links" aria-label="Criadores do site">
+      <a class="creator-link" href="#" aria-label="Perfil GitHub de Rodrigo" title="Rodrigo">
+        <img class="creator-avatar" src="css/github-profile.svg" alt="">
+        <span>Rodrigo</span>
+      </a>
+      <a class="creator-link" href="#" aria-label="Perfil GitHub de Piter" title="Piter">
+        <img class="creator-avatar" src="css/github-profile.svg" alt="">
+        <span>Peter</span>
+      </a>
+    </nav>
+    <button class="cart-button" id="open-cart" aria-label="Abrir carrinho">🛍️ <span>Carrinho</span><b id="cart-count">0</b></button>
+  </header>
+  <main id="inicio">
+    <section class="catalog" id="produtos">
+      <div class="section-heading"><div><h2>Produtos</h2></div></div>
+      <div class="product-grid" id="product-grid"></div>
+    </section>
+    <section class="finalizar-page" id="finalizar-view" hidden>
+      <button class="back-link" id="back-to-store" type="button">← Continuar comprando</button>
+      <h1>Finalizar pedido</h1>
+      <p class="finalizar-intro">Confira os produtos e confirme seu pedido.</p>
+      <div class="finalizar-layout">
+        <section class="finalizar-panel">
+          <h2>Resumo do pedido</h2>
+          <div id="finalizar-items"><p class="empty-finalizar">Seu carrinho está vazio.</p></div>
         </section>
-
-        <section class="hero">
-
-            <div class="card">
-                <img class="imgitens" src="https://images.tcdn.com.br/img/img_prod/403641/464_1_20150626104109.jpg">
-                <span class="itens">Globo Terra Giratório</span>
-                <span class="itens">R$70</span>
-            </div>
-
-            <div class="card">
-                <img class="imgitens" src="https://down-br.img.susercontent.com/file/br-11134207-7r98o-m7lbxuqq5gle86">
-                <span class="itens">Camiseta Astronauta</span>
-                <span class="itens">R$30</span>
-            </div>
-
+        <section class="finalizar-panel">
+          <h2>Total da compra</h2>
+          <div class="finalizar-total"><span>Total</span><strong id="finalizar-total">R$ 0,00</strong></div>
+          <button class="confirm-button" id="confirm-order" type="button">Confirmar pedido</button>
+          <div class="finalizar-message" id="finalizar-message" role="status"></div>
         </section>
-    </main>
-
-    <footer class="footer" id="footer">
-        <h1>Universal Shop</h1>
-        <p>Itens da Galaxia Diretamente para sua Casa</p>
-        <div class="criadores">
-            <h2><img class="imgcriadores" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTGo6JE6juXUcVg4sykwsYysO6IO4SNUc0PHCNl9aKz5iuoC1hpkl0HyuUY&s=10"><a href="">Peter Silva Resing</a></h2>
-            
-            <h2><img class="imgcriadores" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQeb-n2BpwOdTxtyOJBkH_ZAW_hz4kRXiuWrLlcGyVoGw&s=10"><a href="">Rodrigo Fontoura</a></h2>
-        </div>
-    </footer>
-
-
+      </div>
+    </section>
+  </main>
+  <div class="overlay" id="overlay"></div>
+  <aside class="cart-drawer" id="cart-drawer" aria-label="Carrinho de compras" aria-hidden="true"><div class="cart-head"><div><span class="eyebrow">SUA COMPRA</span><h2>Meu carrinho</h2></div><button id="close-cart" class="close-button" aria-label="Fechar carrinho">×</button></div><div id="cart-items" class="cart-items"><p class="empty-cart">Seu carrinho está vazio.</p></div><div class="cart-bottom"><div class="total-row"><span>Total</span><strong id="cart-total">R$ 0,00</strong></div><button class="finalizar-button" id="finalizar">Finalizar pedido</button></div></aside>
+  <div class="toast" id="toast" role="status"></div>
+  <script src="js/script.js"></script>
 </body>
 </html>
