@@ -26,7 +26,7 @@ const products = [
   {
     id: 4,
     name: 'Sorvete de Astronauta',
-    category: 'Colecionáveis',
+    category: 'Alimento',
     price: 29.99,
     image: 'css/astronaut-icecream.WEBP',
     description: 'Uma guloseima temática para deixar sua coleção mais divertida.'
