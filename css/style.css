@@ -34,7 +34,6 @@ select {
   font: inherit;
 }
 
-/* Topbar */
 .topbar {
   height: 78px;
   padding: 0 clamp(18px, 6vw, 80px);
@@ -84,7 +83,7 @@ select {
   width: 25px;
   height: 25px;
   border-radius: 50%;
-  border: 1px solid var(--line);
+  border: 1px solid #000000 ;
   object-fit: cover;
   background: #f3f5f9;
   display: block;
@@ -114,7 +113,6 @@ select {
   font-size: 11px;
 }
 
-/* Hero Section */
 .hero {
   background: var(--soft);
   padding: 50px clamp(22px, 10vw, 140px);
@@ -179,7 +177,6 @@ p {
   display: none;
 }
 
-/* Catalog & Products */
 .catalog {
   max-width: 1220px;
   margin: auto;
@@ -336,6 +333,8 @@ p {
   font-weight: 600;
   padding: 8px 10px;
   cursor: pointer;
+  transition: background ease-in-out 0.2s;
+  transition: color ease-in-out 0.2s;
 }
 
 .add-button:hover {
@@ -343,7 +342,6 @@ p {
   color: #fff;
 }
 
-/* About Section */
 .about {
   max-width: 1168px;
   margin: 0 auto 55px;
@@ -366,7 +364,6 @@ p {
   font-size: 13px;
 }
 
-/* Drawer / Cart Modal */
 .overlay {
   position: fixed;
   inset: 0;
@@ -529,7 +526,6 @@ cart-head {
   transform: translate(-50%, 0);
 }
 
-/* Checkout Page */
 .finalizar-page {
   max-width: 900px;
   margin: 0 auto;
