@@ -98,13 +98,13 @@ select {
   border: 1px solid var(--line);
   background: #fff;
   border-radius: 6px;
-  padding: 9px 12px;
+  padding: 12px 15px;
   display: flex;
   gap: 8px;
   align-items: center;
   color: var(--ink);
   cursor: pointer;
-  font-size: 13px;
+  font-size: 16px;
 }
 
 .cart-button b {
@@ -115,7 +115,7 @@ select {
   border-radius: 50%;
   min-width: 20px;
   height: 20px;
-  font-size: 11px;
+  font-size: 14px;
 }
 
 .hero {
@@ -200,6 +200,7 @@ p {
   font-size: 26px;
   letter-spacing: -.03em;
   margin: 7px 0;
+  margin-bottom: 30px;
 }
 
 .section-heading p,
@@ -300,13 +301,13 @@ p {
 }
 
 .product-category {
-  font-size: 10px;
+  font-size: 13px;
   color: var(--muted);
   margin-bottom: 7px;
 }
 
 .product-info h3 {
-  font-size: 14px;
+  font-size: 17px;
   font-weight: 600;
   margin: 0 0 14px;
   line-height: 1.35;
@@ -325,7 +326,7 @@ p {
 }
 
 .price {
-  font-size: 15px;
+  font-size: 20px;
   font-weight: 700;
 }
 
@@ -334,7 +335,7 @@ p {
   border-radius: 5px;
   background: #fff;
   color: var(--blue);
-  font-size: 11px;
+  font-size: 14px;
   font-weight: 600;
   padding: 8px 10px;
   cursor: pointer;
@@ -455,7 +456,7 @@ cart-head {
 }
 
 .cart-item h4 {
-  font-size: 12px;
+  font-size: 15px;
   margin: 0 0 5px;
 }
 
