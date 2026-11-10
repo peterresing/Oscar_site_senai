@@ -26,7 +26,7 @@ const products = [
   {
     id: 4,
     name: 'Sorvete de Astronauta',
-    category: 'Alimento',
+    category: 'Consumo',
     price: 29.99,
     image: 'css/astronaut-icecream.WEBP',
     description: 'Uma guloseima temática para deixar sua coleção mais divertida.'
@@ -62,7 +62,71 @@ const products = [
     price: 59.99,
     image: 'css/Lava_lamp.jpg',
     description: 'Ilumine o ambiente.'
-  }
+  },
+  {
+    id: 9,
+    name: 'Pijama Temático',
+    category: 'Vestuário',
+    price: 49.99,
+    image: 'css/Pijama.webp',
+    description: 'Pijama sobre astronauta'
+  },
+  {
+    id: 10,
+    name: 'Foguete Luminária',
+    category: 'Decoração',
+    price: 34.99,
+    image: 'css/Nave.webp',
+    description: 'Luminária de Foguete'
+  },
+  {
+    id: 11,
+    name: 'Kit 12 Posters',
+    category: 'Decoração',
+    price: 34.99,
+    image: 'css/Poster.jpg',
+    description: 'Posteres sobre o universo'
+  },
+  {
+    id: 12,
+    name: 'Tabuleiro Viagem Espacial',
+    category: 'Passa-Tempo',
+    price: 44.99,
+    image: 'css/Tabuleiro.png',
+    description: 'Tabuleiro para jogar com a família e amigos'
+  },
+  {
+    id: 13,
+    name: 'Foguete de Brinquedo',
+    category: 'Passa-Tempo',
+    price: 59.99,
+    image: 'css/Foguete_Brinquedo.jpg',
+    description: 'Foguete de brinquedo para brincar'
+  },
+  {
+    id: 14,
+    name: 'Sistema Solar',
+    category: 'Decoração/Maquete',
+    price: 29.99,
+    image: 'css/Sistema.webp',
+    description: 'Sistema solar, você pode usar ela como uma decoração ou para uma maquete de escola/trabalho'
+  },
+  {
+    id: 15,
+    name: 'Imã de Geladeira Temática',
+    category: 'Decoração',
+    price: 9.99,
+    image: 'css/Imã.jpeg',
+    description: 'Imã de geladeira para deixar-la mais bonita'
+  },
+  {
+    id: 16,
+    name: 'Mousepad Temático',
+    category: 'Acessório',
+    price: 29.99,
+    image: 'css/Mousepad.webp',
+    description: 'Mousepad para deixar seu setup ainda melhor'
+  },
 ];
 
 let activeFilter = 'Todos';

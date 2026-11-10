@@ -85,8 +85,8 @@ select {
 }
 
 .creator-avatar {
-  width: 25px;
-  height: 25px;
+  width: 35px;
+  height: 35px;
   border-radius: 50%;
   border: 1px solid #000000 ;
   object-fit: cover;
@@ -105,6 +105,11 @@ select {
   color: var(--ink);
   cursor: pointer;
   font-size: 16px;
+  transition: transform ease-in-out 0.1s;
+}
+
+.cart-button:hover{
+  transform: scale(1.05);
 }
 
 .cart-button b {
