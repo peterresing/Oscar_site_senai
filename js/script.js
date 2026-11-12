@@ -51,7 +51,7 @@ const products = [
     id: 7,
     name: 'Camiseta Astronauta',
     category: 'Vestuário',
-    price: 89.99,
+    price: 24.99,
     image: 'css/astronaut-shirt.jpg',
     description: 'Camiseta preta com estampa espacial para usar no dia a dia.'
   },
@@ -330,7 +330,7 @@ if (themeToggleBtn) {
   themeToggleBtn.addEventListener('click', () => {
     document.body.classList.toggle('dark-mode');
     const isDark = document.body.classList.contains('dark-mode');
-    themeToggleBtn.textContent = isDark ? '☀️' : '🌙';
+    themeToggleBtn.textContent = isDark ? '🌙' : '☀️';
     localStorage.setItem('universalShopTheme', isDark ? 'dark' : 'light');
   });
 }
