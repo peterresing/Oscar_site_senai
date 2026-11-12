@@ -83,7 +83,7 @@ const products = [
     id: 11,
     name: 'Kit 12 Posters',
     category: 'Decoração',
-    price: 34.99,
+    price: 24.99,
     image: 'css/Poster.jpg',
     description: 'Posteres sobre o universo'
   },
@@ -149,6 +149,8 @@ const finalizarItems = document.querySelector('#finalizar-items');
 const finalizarTotal = document.querySelector('#finalizar-total');
 const confirmOrderButton = document.querySelector('#confirm-order');
 const finalizarMessage = document.querySelector('#finalizar-message');
+
+const themeToggleBtn = document.querySelector('#theme-toggle');
 
 const money = (value) =>
   value.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' });
@@ -315,6 +317,22 @@ function showCatalog() {
   if (finalizarMessage) finalizarMessage.classList.remove('show');
   if (confirmOrderButton) confirmOrderButton.style.display = '';
   window.scrollTo({ top: 0, behavior: 'smooth' });
+}
+
+// Lógica de alternância do Modo Noturno
+const currentTheme = localStorage.getItem('universalShopTheme');
+if (currentTheme === 'dark') {
+  document.body.classList.add('dark-mode');
+  if (themeToggleBtn) themeToggleBtn.textContent = '☀️';
+}
+
+if (themeToggleBtn) {
+  themeToggleBtn.addEventListener('click', () => {
+    document.body.classList.toggle('dark-mode');
+    const isDark = document.body.classList.contains('dark-mode');
+    themeToggleBtn.textContent = isDark ? '☀️' : '🌙';
+    localStorage.setItem('universalShopTheme', isDark ? 'dark' : 'light');
+  });
 }
 
 document.querySelectorAll('.filter').forEach((button) => {
